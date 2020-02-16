@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cosr = require("cors");
 const routes = require("./routes");
 
 mongoose.connect(
@@ -19,6 +20,7 @@ mongoose.connect(
 );
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use(routes);
