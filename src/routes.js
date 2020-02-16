@@ -3,7 +3,8 @@ const { Router } = require("express");
 const routes = Router();
 
 routes.post("/devs", (req, res) => {
-  return res.json({ body: req.body });
+  const { github_username } = req.body;
+  return res.json({ github_username });
 });
 
 module.exports = routes;
