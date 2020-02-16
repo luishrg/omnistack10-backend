@@ -5,7 +5,11 @@
   "repository": "https://github.com/luishrg/omnistack10-backend.git",
   "author": "luishumberto2000@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
   }
 }
