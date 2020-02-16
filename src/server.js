@@ -6,7 +6,8 @@ mongoose.connect(
   "mongodb+srv://omnistack:omnistack10@cluster0-84czc.mongodb.net/test?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
   },
   err => {
     if (err) {
